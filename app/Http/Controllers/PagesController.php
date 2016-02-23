@@ -15,6 +15,51 @@ use Redirect;
 class PagesController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    public function subscribe()
+    {
+    	$data = array('email' => Input::get('email'));
+    	 $rules = array('email'=>'required|unique:subscription');
+      $validator = Validator::make($data, $rules);
+   if ($validator->fails()) {
+    // send back to the page with the input data and errors
+    return Redirect::to('/')->withInput()->withErrors($validator->errors());
+  }
+  else 
+  	{
+  		DB::table('subscription')->insert(['email'=>$data['email']]);
+		$dat = "Thank You for Subscribing! Will Keep You Updated :)";
+		return \View::make('success',['data'=>$dat]);
+	}
+
+
+    }
+    public function feed()
+    {
+	$data = Input::all();
+
+	 $rules = array('name' => 'required','admission_number' => 'required','email'=>'required|unique:registration','feedback'=>'required','lab'=>'required');
+      $validator = Validator::make($data, $rules);
+  if ($validator->fails()) {
+    // send back to the page with the input data and errors
+    return Redirect::to('/')->withInput()->withErrors($validator->errors());
+  }
+  else 
+  	{
+  		DB::table('feedback')->insert(['name'=>$data['name'],'email'=>$data['email'],'admission_number'=>$data['admission_number'],'feedback'=>$data['feedback'],'lab'=>$data['lab']]);
+		$dat = "Thank you for feedback! See you soon :)";
+		return \View::make('success',['data'=>$dat]);
+	}
+
+
+    }
+    public function index()
+    {
+    	return \View::make('index');
+    }
+     public function feedback()
+    {
+    	return \View::make('feedback');
+    }
 public function home()
 {/*
 	$count = DB::table('registration')->get();
