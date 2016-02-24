@@ -82,13 +82,13 @@ public function register()
       $validator = Validator::make($data, $rules);
   if ($validator->fails()) {
     // send back to the page with the input data and errors
-    return Redirect::to('/')->withInput()->withErrors($validator->errors());
+    return Redirect::to('/register')->withInput($data)->withErrors($validator->errors());
   }
   else 
     {
       DB::table('registration')->insert(['name'=>$data['name'],'email'=>$data['email'],'mobile'=>$data['mobile'],'admission_number'=>$data['admission_number'],'choose'=>$data['choose'],'attend'=>$data['attend']]);
     $dat = "Thank you for registering! See you soon :)";
-    $link="Go Back To Homepage";
+    $link=0;
     return \View::make('success',['data'=>$dat,'link'=>$link]);
   }
 }
@@ -112,8 +112,8 @@ public function zeal()
     {
       DB::table('zealicon')->insert(['society_name'=>$data['society_name'],'ctc'=>$data['ctc'],'coordinators'=>$data['coordinators'],'volunteers'=>$data['volunteers']]);
     $dat="Society Details Added!!!";
-    $link="Add Events";
-    return \View::make('success_society',['data'=>$dat,'link'=>$link]);
+    $link=1;
+    return \View::make('success',['data'=>$dat,'link'=>$link]);
   }
 }
 
@@ -136,9 +136,8 @@ public function zeal_event()
     {
     DB::table('zeal_event')->insert(['event_name'=>$data['event_name'],'winner'=>$data['winner'],'runner1'=>$data['runner1'],'runner2'=>$data['runner2']]);
     $dat = "Event Details Added!!!";
-    $link1="Add More Events";
-    $link2="Go Back To Homepage";
-    return \View::make('success_event',['data'=>$dat,'link1'=>$link1,'link2'=>$link2]);
+    $link=2;
+    return \View::make('success',['data'=>$dat,'link'=>$link]);
   }
 }
 
