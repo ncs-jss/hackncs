@@ -6,18 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>NCS | Nibble Computer Society</title>
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-        <link href="{{URL::asset('../css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{URL::asset('css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="{{URL::asset('../css/flexslider.css')}}" rel="stylesheet" >
-        <link href="{{URL::asset('../css/styles.css')}}" rel="stylesheet">
-        <link href="{{URL::asset('../css/queries.css')}}" rel="stylesheet">
-        <link href="{{URL::asset('../css/animate.css')}}" rel="stylesheet">
+        <link href="{{URL::asset('css/flexslider.css')}}" rel="stylesheet" >
+        <link href="{{URL::asset('css/styles.css')}}" rel="stylesheet">
+        <link href="{{URL::asset('css/queries.css')}}" rel="stylesheet">
+        <link href="{{URL::asset('css/animate.css')}}" rel="stylesheet">
     </head>
     <body id="top" style='height:100%'>
         <header id="home">
         </header>
         <section class="register" style='height:100%'>
-            <a  class="btn btn-default" href="http://www.hackncs.com/">
+            <a  class="btn btn-default" href="/hackncs/">
              Go back to homepage</a>
             <div class="container">
 
@@ -68,10 +68,10 @@
 
        });
         </script>
-        <script src="{{URL::asset('../js/waypoints.min.js')}}"></script>
-        <script src="{{URL::asset('../js/bootstrap.min.js')}}"></script>
-        <script src="{{URL::asset('../js/scripts.js')}}"></script>
-        <script src="{{URL::asset('../js/jquery.flexslider.js')}}"></script>
-        <script src="{{URL::asset('../js/modernizr.js')}}"></script>
+        <script src="{{URL::asset('js/waypoints.min.js')}}"></script>
+        <script src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{URL::asset('js/scripts.js')}}"></script>
+        <script src="{{URL::asset('js/jquery.flexslider.js')}}"></script>
+        <script src="{{URL::asset('js/modernizr.js')}}"></script>
     </body>
 </html>
