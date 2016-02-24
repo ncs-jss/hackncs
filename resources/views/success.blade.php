@@ -17,8 +17,17 @@
         <header id="home">
         </header>
         <section class="register" style='height:100%'>
-            <a  class="btn btn-default" href="/hackncs/">
-             {{$link}}</a>
+
+                @if($link==0)
+                    <a  class="btn btn-default" href="/hackncs/">Go To Homepage</a>
+                @elseif ($link==1)
+                    <a  class="btn btn-default" href="/hackncs/zealicon_event">Add Event</a>    
+                @else 
+                    <a  class="btn btn-default" href="/hackncs/zealicon_event">Add More Events</a><br><br><br>
+                    <a  class="btn btn-default" href="/hackncs/">Go To Homepage</a>
+                @endif
+
+
             <div class="container">
 
                 <div class="row">
