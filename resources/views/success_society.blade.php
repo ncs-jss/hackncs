@@ -17,7 +17,7 @@
         <header id="home">
         </header>
         <section class="register" style='height:100%'>
-            <a  class="btn btn-default" href="/hackncs/">
+            <a  class="btn btn-default" href="/hackncs/zealicon_event">
              {{$link}}</a>
             <div class="container">
 

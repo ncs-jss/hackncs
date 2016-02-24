@@ -17,8 +17,10 @@
         <header id="home">
         </header>
         <section class="register" style='height:100%'>
-            <a  class="btn btn-default" href="/hackncs/">
-             {{$link}}</a>
+            <a  class="btn btn-default" href="/hackncs/zealicon_event">
+             {{$link1}}</a><br><br><br>
+             <a  class="btn btn-default" href="/hackncs/">
+             {{$link2}}</a>
             <div class="container">
 
                 <div class="row">

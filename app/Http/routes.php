@@ -25,11 +25,19 @@
 
 Route::group(['middleware' => ['web']], function () {
 Route::get('/',array('as'=>'home','uses'=>'PagesController@index'));
+
 Route::get('feedback',array('as'=>'home','uses'=>'PagesController@feedback'));
 Route::post('feed',array('before'=>'csrf','uses'=>'PagesController@feed'));
+
 Route::post('subscribe',array('before'=>'csrf','uses'=>'PagesController@subscribe'));
 
 Route::get('register',array('as'=>'home','uses'=>'PagesController@home'));
 Route::put('register',array('before'=>'csrf','uses'=>'PagesController@register'));
+
+Route::get('zealicon',array('as'=>'home','uses'=>'PagesController@zealicon'));
+Route::put('zeal',array('before'=>'csrf','uses'=>'PagesController@zeal'));
+
+Route::get('zealicon_event',array('as'=>'home','uses'=>'PagesController@zealicon_event'));
+Route::put('zeal_event',array('before'=>'csrf','uses'=>'PagesController@zeal_event'));
    
 });
