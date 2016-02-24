@@ -17,7 +17,7 @@
         <header id="home">
         </header>
         <section class="register">
-            <a  class="btn btn-default" href="http://www.hackncs.com/">
+            <a  class="btn btn-default" href="/hackncs/">
              Go back to homepage</a>
             <div class="container">
 
@@ -25,7 +25,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <h1 style="text-align: center;" class="js-success">Event Details For Zealicon</h1>
                        
-                        <form  method="post" action = "zeal_event" >
+                        <form  method="post" action = "zealicon_event" >
 
                                <input type="hidden" name="_method" value="PUT">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
