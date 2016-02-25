@@ -17,13 +17,13 @@
         <header id="home">
         </header>
         <section class="register">
-            <a  class="btn btn-default" href="/hackncs/">
+            <a  class="btn btn-default" href="{{URL::asset('/')}}">
              Go back to homepage</a>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <h1 style="text-align: center;" class="js-success">FEEDBACK FORM</h1>
-                        <form id="myform" method="post">
+                        <form id="myform" method="post" action="feed">
                             {{csrf_field()}}
                             <label>Name</label>
                             <input type="text" name="name" placeholder="Name" required>
@@ -56,38 +56,6 @@
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script>
-        $(document).ready(function(){
-
-              $('button').on('click',function(event){
-                  event.preventDefault();
-                  $('.js-response').html('');
-                  $.post('feedback.php',$('form').serialize(),function(response){
-                  
-                    console.log(response);
-                   if(response == 'full'){
-                   $('.js-success').html('<p style="margin:36% auto; font-size:1.2em; line-height:1.5em;">We are full at the moment and cannot take any more entries. Sorry!! :(</p>');
-                            
-                            $('form').addClass('hidden');
-                   }else{
-                      
-                       if(response){
-                            $('.js-success').html('<p style="margin:36% auto; font-size:1.2em; line-height:1.5em;">Thank you for your feedback! See you soon :) </p>');
-                            
-                            $('form').addClass('hidden');
-                       }
-                       else
-                            $('.js-response').html('Oops! Try again');
-                            }
-                              
-                  })
-
-              })
-
-
-
-       });
-        </script>
         <script src="js/waypoints.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>

@@ -41,13 +41,14 @@ class PagesController extends BaseController
       $validator = Validator::make($data, $rules);
   if ($validator->fails()) {
     // send back to the page with the input data and errors
-    return Redirect::to('/')->withInput()->withErrors($validator->errors());
+    return Redirect::to('/feedback')->withInput()->withErrors($validator->errors());
   }
   else 
     {
       DB::table('feedback')->insert(['name'=>$data['name'],'email'=>$data['email'],'admission_number'=>$data['admission_number'],'feedback'=>$data['feedback'],'lab'=>$data['lab']]);
     $dat = "Thank you for feedback! See you soon :)";
-    return \View::make('success',['data'=>$dat]);
+    $link=0;
+    return \View::make('success',['data'=>$dat,'link'=>$link]);
   }
 
 
@@ -82,7 +83,7 @@ public function register()
       $validator = Validator::make($data, $rules);
   if ($validator->fails()) {
     // send back to the page with the input data and errors
-    return Redirect::to('/register')->withInput($data)->withErrors($validator->errors());
+    return Redirect::to('/register')->withInput()->withErrors($validator->errors());
   }
   else 
     {

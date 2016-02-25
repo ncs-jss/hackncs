@@ -19,12 +19,12 @@
         <section class="register" style='height:100%'>
 
                 @if($link==0)
-                    <a  class="btn btn-default" href="/hackncs/">Go To Homepage</a>
+                    <a  class="btn btn-default" href="{{URL::asset('/')}}">Go To Homepage</a>
                 @elseif ($link==1)
-                    <a  class="btn btn-default" href="/hackncs/zealicon_event">Add Event</a>    
+                    <a  class="btn btn-default" href="{{URL::asset('/zealicon_event')}}">Add Event</a>    
                 @else 
-                    <a  class="btn btn-default" href="/hackncs/zealicon_event">Add More Events</a><br><br><br>
-                    <a  class="btn btn-default" href="/hackncs/">Go To Homepage</a>
+                    <a  class="btn btn-default" href="{{URL::asset('/zealicon_event')}}">Add More Events</a><br><br><br>
+                    <a  class="btn btn-default" href="{{URL::asset('/')}}">Go To Homepage</a>
                 @endif
 
 
