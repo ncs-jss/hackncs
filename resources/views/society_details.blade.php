@@ -29,27 +29,28 @@
 
                                <input type="hidden" name="_method" value="PUT">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                     <div class ="error"> 
-                                @if($errors->has())
+                                 @if($errors->has())
+                                   <div class ="error"> 
+                  
                 <p>  {{$errors->first('society_name',':message')}} </p>
                 <p>  {{$errors->first('ctc',':message')}} </p>
                 <p>  {{$errors->first('coordinators',':message')}} </p>
                 <p>  {{$errors->first('volunteers',':message')}} </p>
                 
-                 
-                  @endif</div>
+                </div> 
+                  @endif
                         
                             <label>Society Name</label>
                             <input type="text" name="society_name" placeholder="Society_Name" id="society_name" required>
 
                             <label>Number of CTC</label>
-                            <input type="number" name="ctc" placeholder="CTC" required id="ctc" maxlength="2">
+                            <input type="text" name="ctc" placeholder="CTC" required id="ctc" maxlength="2">
                             
                             <label>Number of Co-ordinators</label>
-                            <input type="number" name="coordinators" placeholder="Co-ordinators" required id="coordinators" maxlength="3">
+                            <input type="text" name="coordinators" placeholder="Co-ordinators" required id="coordinators" maxlength="3">
                             
                             <label>Number of Volunteers</label>
-                            <input type="number" name="volunteers" placeholder="Volunteers" required id="volunteers" maxlength="3">
+                            <input type="text" name="volunteers" placeholder="Volunteers" required id="volunteers" maxlength="3">
                         
                             <button type="submit" name="submit">Submit Details</button>
                            </form>
@@ -70,6 +71,72 @@
                     </div>
                 </div>
             </div>
+            
+<script>
+
+document.getElementById('ctc').addEventListener('keydown', function(e)
+  {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) ||
+             // Allow: Ctrl+C
+            (e.keyCode == 67 && e.ctrlKey === true) ||
+             // Allow: Ctrl+X
+            (e.keyCode == 88 && e.ctrlKey === true) ||
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+document.getElementById('coordinators').addEventListener('keydown', function(e)
+  {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) ||
+             // Allow: Ctrl+C
+            (e.keyCode == 67 && e.ctrlKey === true) ||
+             // Allow: Ctrl+X
+            (e.keyCode == 88 && e.ctrlKey === true) ||
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+    
+document.getElementById('volunteers').addEventListener('keydown', function(e)
+  {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) ||
+             // Allow: Ctrl+C
+            (e.keyCode == 67 && e.ctrlKey === true) ||
+             // Allow: Ctrl+X
+            (e.keyCode == 88 && e.ctrlKey === true) ||
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+
+</script>
         </footer>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
