@@ -65,7 +65,7 @@ public function home()
 {/*
   $count = DB::table('registration')->get();
 */  //if(count($count)>0)
-  if(true)
+  if(false)
   {
   return \View::make('index_reg');
   }

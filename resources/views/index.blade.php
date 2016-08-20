@@ -109,7 +109,7 @@ solutions to real life problems.</p>
                     <p>We don’t hunt for spiders at web club…… seriously!!!!
 
 Our members are mostly involved in development of both frontend and backend parts of web based 
-
+  
 application.</p>
                   </div>
                   <div class="col-md-3 wp2 delay-1s">
@@ -148,28 +148,54 @@ Photoshop, illustrator etc are the canvas for our imaginations!!!!!</p>
                     <div class="col-md-4 wp4">
                       <div class="overlay-effect effects clearfix">
                           <div class="img">
-                          <img src="img/portfolio-01.jpg" alt="Portfolio Item" data-href="http://210.212.85.155">
+                          <img src="img/portfolio-01.jpeg" alt="Portfolio Item" data-href="http://210.212.85.155">
                             </div>
                         
                       </div>
-                      <h2>Jss Infocenter</h2>
+                      <h2>Jss Connect</h2>
 
                     </div>
                     <div class="col-md-4 wp4 delay-05s">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
-                          <img src="img/portfolio-02.jpg" alt="Portfolio Item" data-href="/zealicon15">
+                          <img src="img/portfolio-02.jpg" alt="Portfolio Item" data-href="none">
                           
                         </div>
                         
                         </div>
-                      <h2>Zealicon-15 website</h2>
+                      <h2>JSS Infocenter</h2>
               
                     </div>
                     <div class="col-md-4 wp4 delay-1s">
                       <div class="overlay-effect effects clearfix">
                           <div class="img">
-                          <img src="img/portfolio-04.jpg" alt="Portfolio Item" data-href="/zealicon14">
+                          <img src="img/portfolio-03.jpeg" alt="Portfolio Item" data-href="http://zealicon.in">
+                              
+                        </div>
+                          
+                      
+                            </div>
+                        <h2>Zealicon-16 website</h2>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="col-md-4 wp4 delay-1s">
+                      <div class="overlay-effect effects clearfix">
+                          <div class="img">
+                          <img src="img/portfolio-04.jpg" alt="Portfolio Item" data-href="none">
+                              
+                        </div>
+                          
+                      
+                            </div>
+                        <h2>Zealicon-15 website</h2>
+                    </div>
+
+                    <div class="col-md-4 wp4 delay-1s">
+                      <div class="overlay-effect effects clearfix">
+                          <div class="img">
+                          <img src="img/portfolio-05.jpg" alt="Portfolio Item" data-href="none">
                               
                         </div>
                           
@@ -177,38 +203,40 @@ Photoshop, illustrator etc are the canvas for our imaginations!!!!!</p>
                             </div>
                         <h2>Zealicon-14 website</h2>
                     </div>
-                  </li>
-                  <li>
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-05.jpg" alt="Portfolio Item" data-href="none">
-                          
-                        </div>
-                      </div>
-                      <h2>Mcq module</h2>
 
-                    </div>
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-03.jpg" alt="Portfolio Item" data-href="none">
-                          
-                        </div>
-                      </div>
-                      <h2>Library website</h2>
-  
-                    </div>
-                    <div class="col-md-4 wp4 delay-1s">
+                    <div class="col-md-4 wp4">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
                           <img src="img/portfolio-06.jpg" alt="Portfolio Item" data-href="none">
                           
                         </div>
                       </div>
+                      <h2>Mcq module</h2>
+
+                    </div>
+                  </li>
+                  <li>
+                    <div class="col-md-6 wp4 delay-05s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-07.jpg" alt="Portfolio Item" data-href="none">
+                          
+                        </div>
+                      </div>
+                      <h2>Library website</h2>
+  
+                    </div>
+                    <div class="col-md-6 wp4 delay-1s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-08.jpg" alt="Portfolio Item" data-href="none">
+                          
+                        </div>
+                      </div>
                       <h2>Placement Module</h2>
           
                     </div>
+
                   </li>
                 </ul>
               </div>
@@ -229,102 +257,91 @@ Photoshop, illustrator etc are the canvas for our imaginations!!!!!</p>
                 <div id="teamSlider">
                   <ul class="slides">
                     <li>
-                      <div class="col-md-3 wp5">
-                        <img src="img/1.jpeg" alt="Team Member">
-                        <h2>Anant garg</h2>
+                      <div class="col-md-4 wp5">
+                        <img src="img/01.jpg" alt="Team Member" width="202" height="220">
+                        <h2>Abhay rawat</h2>
                         <p>PRESIDENT</p>
                         <div class="social">
                          
                         </div>
                       </div>
                       
-                      <div class="col-md-3 wp5 delay-05s">
-                        <img src="img/2.jpeg" alt="Team Member">
-                        <h2>nikhil verma</h2>
+                      <div class="col-md-4 wp5 delay-05s">
+                        <img src="img/2.jpg" alt="Team Member" width="202" height="220">
+                        <h2>nelabh kotiya</h2>
                         <p>TECHNICAL HEAD</p>
                         <div class="social">
                           
                         </div>
                       </div>
-                      <div class="col-md-3 wp5 delay-1s">
-                        <img src="img/3.jpeg" alt="Team Member">
-                        <h2>deshraj</h2>
-                        <p>GENERAL SECRETARY</p>
-                        <div class="social">
-                          
-                        </div>
-                      </div>
-                        <div class="col-md-3 wp5 delay-105s">
-                        <img src="img/4.jpeg" alt="Team Member">
-                        <h2>prashant chaudhary</h2>
-                        <p>CHIEF ORGANIZING MEMBER </p>
-                        <div class="social">
-                         
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="col-md-3 wp5">
-                        <img src="img/5.jpeg" alt="Team Member">
-                        <h2>nikhil srivastava</h2>
-                        <p>HEAD OF OPERATIONS</p>
-                        <div class="social">
-                         
-                        </div>
-                      </div>
-                      <div class="col-md-3 wp5 delay-05s">
-                        <img src="img/6.jpeg" alt="Team Member">
-                        <h2>saloni shrivastava</h2>
-                        <p>FINANCIAL HEAD</p>
-                        <div class="social">
-                          
-                          </div>
-                      </div>
-                        
-                        <div class="col-md-3 wp5 delay-05s">
-                        <img src="img/10.jpeg" alt="Team Member">
-                        <h2>gauri manglik</h2>
+
+                      <div class="col-md-4 wp5 delay-05s">
+                        <img src="img/3.jpg" alt="Team Member" width="202" height="220">
+                        <h2>siddharth jain</h2>
                         <p>CREATIVE HEAD</p>
                         <div class="social">
                           
                         </div>
                       </div>
-                      <div class="col-md-3 wp5 delay-1s">
-                        <img src="img/8.jpeg" alt="Team Member">
-                        <h2>pankhuri rastogi</h2>
+                    </li>
+
+                    <li>
+                      <div class="col-md-4 wp5 delay-1s">
+                        <img src="img/4.jpg" alt="Team Member" width="202" height="220">
+                        <h2>shubhi khare</h2>
+                        <p>GENERAL SECRETARY</p>
+                        <div class="social">
+                            
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4 wp5">
+                        <img src="img/5.jpg" alt="Team Member" width="202" height="220">
+                        <h2>sushumna khandelwal</h2>
+                        <p>HEAD OF CLUB-WEB</p>
+                        <div class="social">
+                          
+                        </div>
+                      </div>  
+                        
+                      <div class="col-md-4 wp5 delay-1s">
+                        <img src="img/6.jpg" alt="Team Member" width="202" height="220">
+                        <h2>nitin pawar</h2>
                         <p>HEAD OF CLUB-PROGRAMMING</p>
                         <div class="social">
                          
                         </div>
                       </div>
+
                     </li>
                       
                     <li>
-                      <div class="col-md-4 wp5">
-                        <img src="img/9.jpeg" alt="Team Member">
-                        <h2>priyanshi agarwal</h2>
-                        <p>HEAD OF CLUB-WEB</p>
-                        <div class="social">
-                          
-                        </div>
-                      </div>
-                        
                       <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/7.jpeg" alt="Team Member">
-                        <h2>akash jain</h2>
+                        <img src="img/7.jpg" alt="Team Member" width="202" height="220">
+                        <h2>prashant verma</h2>
                         <p>HEAD OF CLUB-DESIGN</p>
                         <div class="social">
                          
                         </div>
-                      </div>
+                      </div> 
+                      
                         
-                        <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/11.jpeg" alt="Team Member">
-                        <h2>kajal gupta</h2>
+                       <div class="col-md-4 wp5 delay-05s">
+                        <img src="img/8.jpg" alt="Team Member" width="202" height="220">
+                        <h2>shivam jindal</h2>
                         <p>HEAD OF CLUB-TECHNICAL</p>
                         <div class="social">
                          
                         </div>
+                      </div>
+
+                      <div class="col-md-4 wp5 delay-05s">
+                        <img src="img/9.jpg" alt="Team Member" width="202" height="220">
+                        <h2>shivani prakash gupta</h2>
+                        <p>FINANCIAL HEAD</p>
+                        <div class="social">
+                          
+                          </div>
                       </div>
             
                     </li>  
@@ -367,7 +384,7 @@ Photoshop, illustrator etc are the canvas for our imaginations!!!!!</p>
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                  <p>+91 8468915550</p>
+                  <p>+91 9958316967</p>
                 </div>
               </div>
               <div class="col-md-4">

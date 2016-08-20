@@ -30,6 +30,37 @@
                                <input type="hidden" name="_method" value="PUT">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                      <div class ="error"> 
+                        <script type="text/javascript">
+                            (function() {
+                                var httpRequest;
+                                document.getElementById("email").onchange = function() { 
+                                var email = document.getElementById("email").value;
+                                makeRequest('/localhost/hackncs/register',email); 
+                            };
+                            function makeRequest(url,email) {
+                                httpRequest = new XMLHttpRequest();
+                                if (!httpRequest) {
+                                    alert('Cannot create an XMLHTTP instance');
+                                    return false;
+                                }
+                                httpRequest.onreadystatechange = alertContents;
+                                httpRequest.open('POST', url);
+                                httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                                httpRequest.send('email=' + encodeURIComponent(email));
+
+                            }
+
+                            function alertContents() {
+                                if (httpRequest.readyState === 4) {
+                                    if (httpRequest.status === 200) {
+                                        console.log(httpRequest.responseText);
+                                    } else {
+                                        alert('There was a problem with the request.');
+                                    }
+                                }
+                            }
+                            })();
+</script>
                                 @if($errors->has())
                 <p>  {{$errors->first('name',':message')}} </p>
                 <p>  {{$errors->first('mobile',':message')}} </p>
@@ -53,13 +84,13 @@
                                 <option value="0">No</option>
                                 <option value="2">Not Sure</option>
                             </select>
-                            <label>What club are you applying for?</label>
+                            <!-- <label>What club are you applying for?</label>
                             <select name="choose" placeholder="What club are you applying for?" id="choose" required>
                                 <option value="1" >Programming club</option>
                                 <option value="2">Design club</option>
                                 <option value="3">Technical club</option>
                                 <option value="4">Web club</option>
-                            </select>
+                            </select> -->
                             <button type="submit" name="submit">Register</button>
                            </form>
 
